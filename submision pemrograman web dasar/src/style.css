@@ -1,0 +1,726 @@
+:root {
+  --primary: #7b3826;
+  --font-color: #3d170c;
+  --bg-hover: #816158;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* header */
+header,
+nav {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 4rem;
+}
+
+nav .navbar-logo img {
+  width: 10rem;
+}
+
+nav .navbar-link {
+  font-size: 1.4rem;
+  display: inherit;
+  gap: 3rem;
+  align-items: inherit;
+  justify-content: center;
+}
+
+nav .navbar-link a {
+  color: #fff;
+  color: var(--font-color);
+  letter-spacing: 0.1rem;
+}
+
+nav .navbar-link #book-table,
+main .hero a,
+main .about .about-text a,
+main .contact .contact-text a {
+  padding: 1.2rem 2.2rem;
+  border-radius: 50px;
+  background-color: var(--primary);
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  letter-spacing: 0.1rem;
+}
+
+nav .navbar-link #book-table:hover,
+main .hero a:hover,
+main .about .about-text a:hover,
+main .menu .container .menu-item button:hover,
+main .contact .contact-text a:hover,
+main .contact .contact-form form button:hover {
+  background-color: var(--bg-hover);
+  cursor: pointer;
+}
+
+nav .menu-toggle {
+  display: none;
+}
+
+nav .menu-toggle a {
+  color: var(--font-color);
+}
+
+.notification-cart {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  position: fixed;
+  top: 1.5rem;
+  right: 20rem;
+}
+
+/* main */
+main {
+  width: 100%;
+}
+
+/* hero */
+main .hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('../assets/cofee-shop.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  gap: 1rem;
+}
+
+main .hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  max-width: 60rem;
+  text-align: center;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+main .hero p {
+  font-size: 2rem;
+  color: #c09457;
+  margin-bottom: 3rem;
+}
+
+/* singgle post */
+main .singgle-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main .singgle-post .card {
+  display: inherit;
+  align-items: inherit;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  gap: 1rem;
+  flex: 1;
+}
+
+main .singgle-post .card h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+main .singgle-post .card p {
+  font-size: 1.4rem;
+  max-width: 30rem;
+  text-align: center;
+}
+
+/* about */
+main .about {
+  width: 100%;
+  padding: 4rem 6rem;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .about .about-text {
+  flex: 1;
+}
+
+main .about .about-text h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: var(--font-color);
+}
+
+main .about .about-text p {
+  font-size: 1.4rem;
+  max-width: 40rem;
+  line-height: 1.5;
+  color: #737171;
+  margin-bottom: 3rem;
+}
+
+main .about .about-image {
+  flex: 1;
+}
+
+main .about .about-image img {
+  width: 100%;
+}
+
+/* menu */
+main .menu {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+main .menu h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--font-color);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+main .menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+main .menu .container .menu-item {
+  padding: 4rem 1rem 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 1px 1px rgba(123, 56, 38, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 43rem;
+}
+
+main .menu .container .menu-item img {
+  width: 30rem;
+}
+
+main .menu .container .menu-item .menu-title {
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: bold;
+  color: var(--font-color);
+}
+
+main .menu .container .menu-item .menu-price {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+main .menu .container .menu-item .menu-description {
+  max-width: 30rem;
+  text-align: center;
+  color: var(--primary);
+  line-height: 1.7rem;
+}
+
+main .menu .container .menu-item button,
+main .contact .contact-form form button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100%;
+  margin-top: auto;
+  border-radius: inherit;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+/* contact */
+main .contact {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/bg-cofee.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem;
+  flex-wrap: wrap;
+}
+
+main .contact .contact-text {
+  flex: 1;
+  color: #fff;
+}
+
+main .contact .contact-text h2,
+main .contact .contact-text h3 {
+  font-size: 2rem;
+  color: #c09457;
+}
+
+main .contact .contact-text h2 span {
+  font-size: 4rem;
+  display: block;
+  color: #fff;
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+
+main .contact .contact-text p {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  max-width: 40rem;
+  margin-bottom: 4rem;
+}
+
+main .contact .contact-form {
+  flex: 1;
+  background-color: #c09457;
+  padding: 4rem 0;
+  margin-top: -7.5rem;
+}
+
+main .contact .contact-form h4 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+main .contact .contact-form h4 span {
+  font-size: 4rem;
+  display: block;
+}
+
+main .contact .contact-form form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+  padding: 0 8rem;
+  gap: 1rem;
+}
+
+main .contact .contact-form form .input-grup {
+  width: 100%;
+  height: 4rem;
+}
+
+main .contact .contact-form form .input-grup input,
+main .contact .contact-form form .input-grup textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  color: var(--font-color);
+}
+
+main .contact .contact-form form .input-grup textarea {
+  height: 6rem;
+}
+
+main .contact .contact-form form button {
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+main .map {
+  padding: 2rem;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: #282828;
+  padding: 4rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+footer div {
+  display: inherit;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+
+footer div h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer .footer-about p {
+  max-width: 50rem;
+  font-size: 1.2rem;
+  color: #737171;
+}
+
+footer .footer-link a,
+footer .footer-contact a {
+  margin-bottom: 0.6rem;
+  color: #737171;
+  margin-left: 0.6rem;
+}
+footer .footer-link a:hover,
+footer .footer-contact a:hover {
+  color: #c09457;
+}
+
+footer .copyright {
+  position: absolute;
+  bottom: 1rem;
+  color: #737171;
+}
+
+/* mobile */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  nav {
+    padding: 1.4rem 2rem;
+  }
+
+  nav .navbar-logo img {
+    width: 7rem;
+  }
+
+  nav .navbar-link {
+    width: 50%;
+    height: 100vh;
+    padding: 1.4rem;
+    font-size: 1rem;
+    padding-bottom: 0;
+    background-color: #282828;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    top: 5.1rem;
+    right: -100%;
+    gap: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav .navbar-link.show {
+    right: 0;
+  }
+
+  nav .navbar-link a {
+    color: #fff;
+  }
+
+  nav .navbar-link a:hover {
+    color: var(--primary);
+  }
+
+  nav .navbar-link #shopping-cart {
+    position: fixed;
+    top: 1.5rem;
+    right: 5.5rem;
+    color: var(--font-color);
+  }
+
+  nav .navbar-link #book-table {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    margin-top: -1rem;
+  }
+
+  nav .menu-toggle {
+    display: block;
+  }
+
+  .notification-cart {
+    width: 16px;
+    height: 16px;
+    font-size: 0.6rem;
+    top: 1rem;
+    right: 4.4rem;
+  }
+
+  main .hero h1 {
+    font-size: 2rem;
+    max-width: 28rem;
+  }
+
+  main .hero p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  main .singgle-post .card h2 {
+    font-size: 2rem;
+  }
+
+  main .singgle-post .card p {
+    font-size: 1rem;
+  }
+
+  main .about {
+    flex-direction: column;
+    gap: 6rem;
+    padding: 4rem 2rem;
+  }
+
+  main .about .about-text h1 {
+    font-size: 2rem;
+  }
+
+  main .about .about-text p {
+    font-size: 1rem;
+  }
+
+  main .menu {
+    padding: 0;
+  }
+
+  main .menu h2 {
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+
+  main .menu .container {
+    padding: 0 2rem;
+  }
+
+  main .menu .container .menu-item {
+    width: 100%;
+    height: 37rem;
+  }
+
+  main .menu .container .menu-item img {
+    width: 20rem;
+  }
+
+  main .menu .container .menu-item .menu-title {
+    font-size: 1.4rem;
+  }
+
+  main .menu .container .menu-item .menu-price {
+    font-size: 1.2rem;
+  }
+
+  main .menu .container .menu-item .menu-description {
+    font-size: 1rem;
+    max-width: 25rem;
+  }
+
+  main .menu .container .menu-item button,
+  main .contact .contact-form form a,
+  main .contact .contact-form form button {
+    font-size: 1.2rem;
+  }
+
+  main .contact {
+    padding: 2rem;
+    margin-top: 2rem;
+    height: auto;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+
+  main .contact .contact-text h2,
+  main .contact .contact-text h3,
+  main .contact .contact-form h4 {
+    font-size: 1.2rem;
+  }
+
+  main .contact .contact-text h2 span,
+  main .contact .contact-form h4 span {
+    font-size: 2rem;
+    max-width: 15rem;
+  }
+
+  main .contact .contact-text p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  main .contact .contact-form {
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  main .contact .contact-form h4 span {
+    margin: 0 auto;
+  }
+
+  main .contact .contact-form form {
+    padding: 0 2rem;
+  }
+
+  main .contact .contact-form form .input-grup input,
+  main .contact .contact-form form .input-grup textarea {
+    font-size: 1rem;
+  }
+
+  main .contact .contact-form form button {
+    margin-top: 2rem;
+  }
+
+  footer {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+
+  footer .footer-about p {
+    font-size: 1rem;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  nav {
+    padding: 2rem 3rem;
+  }
+
+  nav .navbar-logo img {
+    width: 9rem;
+  }
+
+  nav .navbar-link {
+    gap: 2rem;
+    font-size: 1.2rem;
+  }
+
+  nav .navbar-link #book-table {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+  .notification-cart {
+    width: 18px;
+    height: 18px;
+    font-size: 0.8rem;
+    top: 1.8rem;
+    right: 16.4rem;
+  }
+
+  main .singgle-post {
+    flex-direction: column;
+  }
+
+  main .singgle-post .card {
+    width: 100%;
+    padding: 6rem 0;
+  }
+
+  main .about {
+    flex-direction: column;
+    gap: 6rem;
+    padding: 6rem 4rem;
+  }
+
+  main .about .about-text p {
+    max-width: 100%;
+  }
+
+  main .menu h2 {
+    margin-top: 4rem;
+  }
+
+  main .menu .container {
+    gap: 4rem;
+  }
+
+  main .menu .container .menu-item {
+    width: 45rem;
+  }
+
+  main .contact {
+    align-items: start;
+    flex-direction: column;
+    height: auto;
+  }
+
+  main .contact .contact-form {
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  main .contact .contact-form form {
+    padding: 0 2rem;
+    width: 100%;
+  }
+
+  main .contact .contact-form form .input-grup {
+    height: 5rem;
+  }
+
+  footer {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+
+  footer .footer-about p {
+    font-size: 1rem;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+  main .contact .contact-form {
+    margin-top: 0;
+  }
+}

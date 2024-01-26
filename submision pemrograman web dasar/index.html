@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/service-img2-1.png" type="image/x-icon" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="src/style.css" />
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Cofee Shop</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar-logo">
+          <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+        </div>
+        <div class="navbar-link">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#menuSection">Menu</a>
+          <a href="#contact">Contact</a>
+          <a href="#"><i data-feather="shopping-cart" id="shopping-cart"></i></a>
+          <a href="#contact" id="book-table">Book a Table</a>
+        </div>
+        <div class="notification-cart">0</div>
+        <div class="menu-toggle">
+          <a href="#" id="menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <h1>The Coffee Shop of Choice Among Coffee Lovers</h1>
+        <p>A morning without Coffee is like sleep</p>
+        <a href="#about">Read More</a>
+      </section>
+
+      <section class="singgle-post"></section>
+
+      <section class="about" id="about">
+        <div class="about-text">
+          <h1>About Cafe</h1>
+          <article>
+            <p>
+              A cozy coffee shop nestled in the heart of the city, our coffee haven offers a warm ambience and a delightful escape for coffee enthusiasts. Boasting a diverse menu of carefully crafted brews, from rich espressos to velvety
+              lattes, our skilled baristas ensure a perfect cup every time. The aroma of freshly ground beans wafts through the air, inviting patrons to savor not just coffee but also a selection of delectable pastries.
+            </p>
+          </article>
+          <a href="#">Read More</a>
+        </div>
+        <div class="about-image">
+          <aside>
+            <img src="assets/about-coffee-1.jpg" alt="about" />
+          </aside>
+        </div>
+      </section>
+
+      <section class="menu" id="menuSection">
+        <h2>Menu</h2>
+        <div class="container"></div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-text">
+          <h2>Feel the taste <span>More than coffee & Tea</span></h2>
+          <h3>Flat 20% Discount</h3>
+          <p>20% discount if you buy on Friday provided you have purchased at least once</p>
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="contact-form">
+          <h4>Reserve <span>Your Table</span></h4>
+          <form>
+            <div class="input-grup">
+              <label for="name"></label>
+              <input type="text" name="name" id="name" placeholder="insert your name heree.." required autocomplete="off" />
+            </div>
+            <div class="input-grup">
+              <label for="email"></label>
+              <input type="email" name="email" id="email" placeholder="example@gmail.com" required autocomplete="off" />
+            </div>
+            <div class="input-grup">
+              <label for="tel"></label>
+              <input type="tel" name="tel" id="tel" placeholder="insert your phone heree.." required autocomplete="off" />
+            </div>
+            <div class="input-grup">
+              <label for="date"></label>
+              <input type="date" name="date" id="date" required autocomplete="off" />
+            </div>
+            <div class="input-grup">
+              <label for="message"></label>
+              <textarea name="message" id="message" placeholder="message"></textarea>
+            </div>
+            <button>Book a Table</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.829860757169!2d108.07906587357496!3d-7.4840313737964115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e65ffe48f03381b%3A0xa6a726017111b770!2sRumah%20Sandi!5e0!3m2!1sid!2sid!4v1706255264657!5m2!1sid!2sid"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-about">
+        <h1>About Cofee Shop</h1>
+        <p>
+          A cozy coffee shop nestled in the heart of the city, our coffee haven offers a warm ambience and a delightful escape for coffee enthusiasts. Boasting a diverse menu of carefully crafted brews, from rich espressos to velvety
+          lattes, our skilled baristas ensure a perfect cup every time. The aroma of freshly ground beans wafts through the air, inviting patrons to savor not just coffee but also a selection of delectable pastries.
+        </p>
+      </div>
+      <div class="footer-link">
+        <h1>Quick Link</h1>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menuSection">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <h1>Contact Info</h1>
+        <a href="#">example@gmail.com</a>
+        <a href="#">+62 12456 54334</a>
+        <a href="#">@cofeeshopId (Telegram)</a>
+        <a href="#">@cofeeshopId_</a>
+      </div>
+      <p class="copyright">Belajar Dasar Pemrograman Web &copy; 2024, Dicoding Academy</p>
+    </footer>
+
+    <!-- js -->
+    <script src="src/script.js"></script>
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
