@@ -412,8 +412,8 @@ footer .footer-link a,
 footer .footer-contact a {
   margin-bottom: 0.6rem;
   color: #737171;
-  margin-left: 0.6rem;
 }
+
 footer .footer-link a:hover,
 footer .footer-contact a:hover {
   color: #c09457;
@@ -501,12 +501,18 @@ footer .copyright {
     margin-bottom: 2rem;
   }
 
+  main .hero a {
+    font-size: 1rem;
+  }
+
   main .singgle-post .card h2 {
     font-size: 2rem;
   }
 
   main .singgle-post .card p {
     font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
   }
 
   main .about {
@@ -520,6 +526,10 @@ footer .copyright {
   }
 
   main .about .about-text p {
+    font-size: 1rem;
+  }
+
+  main .about a {
     font-size: 1rem;
   }
 
@@ -561,11 +571,11 @@ footer .copyright {
   main .menu .container .menu-item button,
   main .contact .contact-form form a,
   main .contact .contact-form form button {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   main .contact {
-    padding: 2rem;
+    padding: 2rem 1rem;
     margin-top: 2rem;
     height: auto;
     flex-direction: column;
@@ -600,7 +610,7 @@ footer .copyright {
   }
 
   main .contact .contact-form form {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   main .contact .contact-form form .input-grup input,
